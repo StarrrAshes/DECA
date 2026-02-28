@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — DECA Hub</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <!-- Page Loader -->
+  <div class="page-loader" aria-hidden="true"><div class="loader-diamond"></div></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="DECA Hub Home">
+        <div class="diamond"><span>D</span></div>
+        DECA Hub
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="theme-picker">
+        <button class="theme-picker-toggle" aria-label="Change accent color">🎨</button>
+        <div class="theme-picker-menu">
+          <button class="theme-swatch active" data-color="blue" style="background:#003B7B;" aria-label="Blue theme"></button>
+          <button class="theme-swatch" data-color="teal" style="background:#0D6D6E;" aria-label="Teal theme"></button>
+          <button class="theme-swatch" data-color="purple" style="background:#5B21B6;" aria-label="Purple theme"></button>
+          <button class="theme-swatch" data-color="red" style="background:#991B1B;" aria-label="Red theme"></button>
+          <button class="theme-swatch" data-color="green" style="background:#166534;" aria-label="Green theme"></button>
+        </div>
+      </div>
+      <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== 404 CONTENT ======== -->
+  <section id="main-content" class="page-transition" style="margin-top: 68px; min-height: 70vh; display: flex; align-items: center; text-align: center;">
+    <div class="container">
+      <div style="max-width: 520px; margin: 0 auto;">
+        <div style="width: 100px; height: 100px; background: var(--deca-blue); transform: rotate(45deg); border-radius: 12px; margin: 0 auto 30px; display: flex; align-items: center; justify-content: center;">
+          <span style="transform: rotate(-45deg); color: var(--white); font-family: var(--font-heading); font-size: 2rem;">404</span>
+        </div>
+        <h1 style="font-size: 2.2rem; margin-bottom: 14px;">Page Not Found</h1>
+        <p style="color: var(--gray-600); font-size: 1.05rem; margin-bottom: 30px; line-height: 1.7;">
+          Looks like this page took a wrong turn on the way to ICDC. The page you're looking for doesn't exist or has been moved.
+        </p>
+        <div class="hero-buttons" style="justify-content: center;">
+          <a href="index.html" class="btn btn-primary">← Back to Home</a>
+          <a href="events.html" class="btn btn-blue">Explore Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none;">
+        <p>&copy; 2026 DECA Hub. This is a fan/informational site, not affiliated with DECA Inc.</p>
+        <div class="footer-bottom-links">
+          <a href="https://www.deca.org" target="_blank" rel="noopener noreferrer">Official DECA Website</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Keyboard Shortcuts Overlay -->
+  <div class="shortcuts-overlay" aria-hidden="true">
+    <div class="shortcuts-box">
+      <h3>⌨️ Keyboard Shortcuts</h3>
+      <div class="shortcut-row"><span class="shortcut-label">Go to Home</span><span class="shortcut-key">H</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Go to About</span><span class="shortcut-key">A</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Go to Resources</span><span class="shortcut-key">R</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Go to Events</span><span class="shortcut-key">E</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Go to Contact</span><span class="shortcut-key">C</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Toggle Dark Mode</span><span class="shortcut-key">D</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Scroll to Top</span><span class="shortcut-key">T</span></div>
+      <div class="shortcut-row"><span class="shortcut-label">Show Shortcuts</span><span class="shortcut-key">?</span></div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Image Lightbox -->
+  <div class="lightbox-overlay" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="Enlarged image" />
+  </div>
+
+  <!-- Quick Links Speed Dial -->
+  <div class="speed-dial">
+    <div class="speed-dial-menu">
+      <a href="https://www.deca.org" target="_blank" rel="noopener noreferrer" class="speed-dial-item">🌐 DECA.org</a>
+      <a href="events.html" class="speed-dial-item">🏆 Events</a>
+      <a href="resources.html" class="speed-dial-item">📘 Resources</a>
+      <a href="contact.html" class="speed-dial-item">✉️ Contact</a>
+    </div>
+    <button class="speed-dial-toggle" aria-label="Quick links">⚡</button>
+  </div>
+
+  <!-- Preference Banner -->
+  <div class="pref-banner" role="banner">
+    <p>🍪 This site uses localStorage to save your dark mode preference for a better experience.</p>
+    <button class="pref-banner-btn btn-accept">Accept</button>
+    <button class="pref-banner-btn btn-dismiss">Dismiss</button>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>
